@@ -36,7 +36,7 @@ const Home = () => {
   useEffect(() => (filterer(), pager()), []);
 
   return (
-    <main className="bg-[#181818] w-full min-h-screen pt-5">
+    <main className="bg-[#181818] w-full min-h-screen pt-5 flex flex-col justify-between">
       <motion.div
         className="flex flex-col w-full h-full gap-2 text-red-700 bg-[#181818] px-4 md:px-20"
         initial={{ opacity: 0 }}

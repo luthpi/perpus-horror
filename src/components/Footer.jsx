@@ -3,12 +3,10 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+    <div
+      className="flex flex-col"
     >
-      <footer className="footer p-10 bg-[#151515] text-red-600 uppercase">
+      <footer className="footer py-10 bg-[#151515] text-red-600 uppercase px-8 md:px-20">
         <nav>
           <header className="font-bold text-2xl text-red-800 font-serif">
             tautan
@@ -41,7 +39,7 @@ const Footer = () => {
           </a>
         </nav>
       </footer>
-      <footer className="footer px-10 pt-4 pb-7 bg-[#131313] text-red-600">
+      <footer className="footer pt-4 pb-7 px-8 md:px-20 bg-[#131313] text-red-600">
         <aside className="flex flex-col">
           <h1 className="text-2xl font-serif text-red-800">Luthpai</h1>
           <p>
@@ -50,7 +48,7 @@ const Footer = () => {
           </p>
         </aside>
       </footer>
-    </motion.div>
+    </div>
   );
 };
 
