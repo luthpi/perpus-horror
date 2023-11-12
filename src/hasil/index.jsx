@@ -4,6 +4,7 @@ import dataCerpen from "/data/cerpen.json";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer.jsx";
 import Finder from "../components/Finder.jsx";
+import Button from "../components/Button.jsx"
 
 const Hasil = () => {
   const nav = useNavigate();
@@ -22,16 +23,14 @@ const Hasil = () => {
   useEffect(() => filterer(), []);
 
   return (
-    <main className="bg-[#181818] w-full min-h-screen text-red-600 overflow-hidden flex flex-col justify-between">
+    <main className="bg-[#151515] w-full min-h-screen text-red-600 overflow-hidden flex flex-col justify-between">
       <motion.div
         className="p-4 md:px-20 w-full flex flex-col items-start"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <Link className="underline w-fit" to="/beranda/1">
-          &lt;- Kembali ke beranda
-        </Link>
+        <Button />
         <span>
           <h1 className="text-xl font-serif">Hasil Pencarian "{key}"</h1>
         </span>
