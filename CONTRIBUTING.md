@@ -3,7 +3,7 @@
 Kontribusi dibagi menjadi dua :
 
 - [Kontribusi cerpen](#kontribusi-cerpen)
-- [Kontribusi website](#kontribusi-developer)
+- [Kontribusi website](#kontribusi-website)
 
 ## Kontribusi Cerpen
 
