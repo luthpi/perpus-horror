@@ -7,7 +7,7 @@ const manifest = {
   includeAssests: ["favicon.ico", "apple-touc-icon.png", "masked-icon.svg"],
   manifest: {
     name: "Perpus Horror",
-    short_name: "perpus-horror",
+    short_name: "Perpus Horror",
     description: "Tempatnya cerpen-cerpen horror yang menarik abis",
     icons: [
       {
@@ -39,7 +39,7 @@ const manifest = {
     background_color: "#181818",
     display: "standalone",
     scope: "/",
-    start_url: "/",
+    start_url: "/beranda/1",
     orientation: "portrait",
   },
 };

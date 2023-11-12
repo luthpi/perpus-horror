@@ -20,12 +20,12 @@ const Baca = (props) => {
   }, []);
 
   return (
-    <main className="bg-[#181818] w-full min-h-screen">
+    <main className="bg-[#181818] w-full min-h-screen flex flex-col justify-between">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex p-4 md:px-20 bg-[#181818] flex-col text-red-700 items-start"
+        className="flex p-4 md:px-20 bg-[#181818] flex-col text-red-700 items-start min-h-screen"
       >
         <Link className="underline w-fit" to="/beranda/1">
           &lt;- Kembali ke beranda
