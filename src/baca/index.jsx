@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import dataCerpen from "/data/cerpen.json";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer.jsx";
-import Button from "../components/Button.jsx"
+import Button from "../components/Button.jsx";
 
 const Baca = (props) => {
   const nav = useNavigate();
@@ -65,7 +65,7 @@ const Baca = (props) => {
         <span className="whitespace-pre-wrap mt-3">
           {cerpen.teks ? cerpen.teks : "Cerpen yang anda cari tidak ditemukan"}
         </span>
-        <Button />
+        <Button>Kembali</Button>
       </motion.div>
     </main>
   );

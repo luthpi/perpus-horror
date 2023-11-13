@@ -3,19 +3,19 @@ import { useNavigate, Link } from "react-router-dom";
 
 const Finder = () => {
   const findInput = useRef("");
-  const [input, setInput] = useState()
+  const [input, setInput] = useState();
   const nav = useNavigate();
   function handleNav(keyword) {
     nav(`/hasil/${keyword}`);
   }
   return (
-    <div className="py-3 flex gap-2">
+    <div className="py-3 w-3/4 flex gap-2">
       <input
         ref={findInput}
-        onChange={e => setInput(e.target.value)}
+        onChange={(e) => setInput(e.target.value)}
         type="text"
         placeholder="Cari cerpen..."
-        className="h-[32px] px-2 rounded-lg input max-w-xs bg-[#212121] text-red-600 focus:outline-0 placeholder:text-red-800"
+        className="h-[32px] px-2 rounded-lg input bg-[#212121] text-red-600 focus:outline-0 placeholder:text-red-800 w-full"
         onKeyDown={(e) => {
           if (e.key == "Enter" && findInput.current.value != "") {
             handleNav(findInput.current.value);

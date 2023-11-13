@@ -10,6 +10,10 @@
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
+*::selection {
+  @apply bg-red-700 text-black;
+}
+
 @font-face {
   font-family: "nunito";
   src: url("/nunito.ttf") format("truetype");

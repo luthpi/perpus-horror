@@ -36,7 +36,7 @@ const manifest = {
       },
     ],
     theme_color: "#dc2626",
-    background_color: "#181818",
+    background_color: "#121212",
     display: "standalone",
     scope: "/",
     start_url: "/beranda/1",

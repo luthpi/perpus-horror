@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div
+    <motion.div
       className="flex flex-col"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: "tween", duration: 1 }}
     >
       <footer className="footer py-10 bg-[#151515] text-red-600 uppercase px-8 md:px-20">
         <nav>
@@ -48,7 +51,7 @@ const Footer = () => {
           </p>
         </aside>
       </footer>
-    </div>
+    </motion.div>
   );
 };
 

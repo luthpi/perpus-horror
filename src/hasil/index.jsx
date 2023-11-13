@@ -4,7 +4,7 @@ import dataCerpen from "/data/cerpen.json";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer.jsx";
 import Finder from "../components/Finder.jsx";
-import Button from "../components/Button.jsx"
+import Button from "../components/Button.jsx";
 
 const Hasil = () => {
   const nav = useNavigate();
