@@ -11,7 +11,7 @@
 }
 
 *::selection {
-  @apply bg-red-700 text-black;
+  @apply bg-red-700 text-white;
 }
 
 @font-face {
@@ -26,5 +26,5 @@
 
 body {
   @apply w-screen box-border font-['nunito'] bg-[#181818];
-  font-weight: 600;
+  font-weight: 510;
 }

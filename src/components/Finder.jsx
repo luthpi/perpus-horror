@@ -15,7 +15,7 @@ const Finder = () => {
         onChange={(e) => setInput(e.target.value)}
         type="text"
         placeholder="Cari cerpen..."
-        className="h-[32px] px-2 rounded-lg input bg-[#212121] text-red-600 focus:outline-0 placeholder:text-red-800 w-full"
+        className="h-[32px] px-2 rounded-lg input bg-[#212121] text-red-600 focus:outline-0 placeholder:text-red-700 w-full"
         onKeyDown={(e) => {
           if (e.key == "Enter" && findInput.current.value != "") {
             handleNav(findInput.current.value);

@@ -23,7 +23,7 @@ const Hasil = () => {
   useEffect(() => filterer(), []);
 
   return (
-    <main className="bg-[#151515] w-full min-h-screen text-red-600 overflow-hidden flex flex-col justify-between">
+    <main className="bg-[#181818] w-full min-h-screen text-red-600 overflow-hidden flex flex-col justify-between">
       <motion.div
         className="p-4 md:px-20 w-full flex flex-col items-start"
         initial={{ opacity: 0 }}
