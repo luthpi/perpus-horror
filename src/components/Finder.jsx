@@ -5,6 +5,7 @@ const Finder = () => {
   const findInput = useRef("");
   const [input, setInput] = useState();
   const nav = useNavigate();
+  const handleNav = url => nav(url)
   return (
     <div className="py-3 w-3/4 flex gap-2">
       <input
