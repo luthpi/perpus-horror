@@ -65,7 +65,7 @@ const Home = () => {
                   </p>
                   <Link
                     className="bg-red-700 text-black py-1 px-2 w-fit rounded-lg font-bold text-sm active:bg-red-800 transition mt-2"
-                    to={`/baca/${item.slug}`}
+                    to={`/baca/${item.slug}?pageRef=${page}`}
                   >
                     Baca Selengkapnya
                   </Link>

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, useSearchParams } from "react-router-dom";
 import dataCerpen from "/data/cerpen.json";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer.jsx";
 import Button from "../components/Button.jsx";
 
 const Baca = (props) => {
+  const [params] = useSearchParams()
+  const pageRef = params.get("pageRef")
   const nav = useNavigate();
   const [cerpen, setCerpen] = useState({});
   const { slug } = useParams();
@@ -32,7 +34,7 @@ const Baca = (props) => {
         <div className="text-sm breadcrumbs text-red-600">
           <ul>
             <li>
-              <Link to="/halaman/1">Baca</Link>
+              <Link to={pageRef ? `/beranda/${pageRef}` : "/beranda/1"}>Baca</Link>
             </li>
             <li>
               <Link to={cerpen.slug ? `/baca/${cerpen.slug}` : "/"}>
