@@ -5,7 +5,6 @@ const Finder = () => {
   const findInput = useRef("");
   const [input, setInput] = useState();
   const nav = useNavigate();
-  const handleNav = url => nav(url)
   return (
     <div className="py-3 w-3/4 flex gap-2">
       <input
@@ -16,7 +15,7 @@ const Finder = () => {
         className="h-[32px] px-2 rounded-lg input bg-[#212121] text-red-600 focus:outline-0 placeholder:text-red-700 w-[16rem]"
         onKeyDown={(e) => {
           if (e.key == "Enter" && findInput.current.value != "") {
-            handleNav(findInput.current.value);
+            nav('/hasil/' + input);
           }
         }}
       />
